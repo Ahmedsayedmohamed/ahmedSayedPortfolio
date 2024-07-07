@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ahmed Sayed | احمد سيد</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./favicon.ico.svg" type="image/x-icon" />
+
+    <meta name="description" content="Ahmed Sayed's protofolio" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script data-src="IndexSc.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+
+<link href="http://fonts.cdnfonts.com/css/holimount-swash?styles=53644" rel="stylesheet">
+
+<style>
+     @import url('http://fonts.cdnfonts.com/css/holimount-swash?styles=53644');
+     @font-face {
+    font-family: 'Holimount';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Holimount'), url('https://fonts.cdnfonts.com/s/31593/Holimount.woff') format('woff');
+}
+</style>
+    
+</head>
+
+
+
+<body>
+
+    <header class="header">
+        <nav>
+
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+                <div class="dropdown-list">
+                    <div class="dropdown-list-item"><a href="#Home">Home</a></div>
+                    <div class="dropdown-list-item"><a href="#My-Story">About me</a></div>
+                    <div class="dropdown-list-item"><a href="#Services">Services</a></div>
+                <div class="dropdown-list-item"><a href="#Portfolio">Portfolio</a></div>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <section class="main" id="Home">
+        <div class="nt">
+
+            <h5>Ahmed Sayed Mohamed</h5>
+            <h4 class="tit">Software Engineer</h4>
+
+            <div class="share">
+                <input type="checkbox" id="sharebutton">
+                <label for="sharebutton" class="share-btn"><i class="fas fa-share-alt"></i></label>
+                <ul>
+                    <li class="whatsapp"><a href="http://wa.me/201145809984" target="_blank"><i class="ri-whatsapp-line whatsapp"></i></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/ahmedsayed.165/" target="_blank"><i class="ri-instagram-line instagram"></i></a></li>
+                    <li class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/ahmed-sayed-945829151" target="_blank"><i class="ri-linkedin-line linkedin"></i></a></li> 
+                    <li class="github"><a href="https://github.com/Ahmedsayedmohamed?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="pages-p" id="My-Story">
+
+        <div class="box-titles">
+            <h2 class="tittle1">About me</h2>
+            <div class="button2info" id="bn2i"><a href="#My-Story2" onclick="if(document.getElementById('My-Story2') .style.display=='none') {document.getElementById('My-Story2') .style.display=''}else{}">+</a></div>
+        </div>
+    
+    </section>
+
+    <section class="My-Story" id="My-Story2" style="display:none;">
+        <div class="button2home" id="b2h1"><a href="#My-Story"><i class="fa-solid fa-chevron-up"></i></a></div>
+        <script>
+            $("#b2h1").click(function () {
+                 $("#My-Story2").fadeOut('slow');
+            });
+            </script>        
+        <div class="container1">
+            <!--=============== NAVIGATION MENU ===============-->
+        
+            <div class="menu">
+                <a href="#welcome-section" class="menu-icon fas fa-home"></a>
+                <a href="#about" class="menu-icon fas fa-user"></a>
+                <a href="#experience" class="menu-icon fas fa-briefcase"></a>
+            </div>
+        
+            <!--=============== MAIN "WINDOW" ===============-->
+        
+            <div class="portfolio1">
+                <!--=============== HEADER SECTION ===============-->
+        
+                <section class="header2">
+                    <img class="header-img" src="./ahmed_sayed_5.png" />
+                    <h1>Ahmed Sayed</h1>
+                    <h2>Software Engineer</h2>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/ahmed-sayed-945829151" target="_blank" class="fab fa-linkedin-in" id="profile-link"></a>
+                        <a href="https://github.com/Ahmedsayedmohamed?tab=repositories" target="_blank" class="fab fa-github"></a>
+                        <a href="http://wa.me/201145809984" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto: asayed565565@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://instagram.com/ahmed.sayed_165" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="./Ahmed sayed CV.pdf" download target="_blank" class="cta">DownIoad CV</a>
+                </section>
+        
+                <!--=============== CONTENT SECTION ===============-->
+        
+                <div class="content1">
+                    <!--=============== HOME ===============-->
+        
+                    <section class="content-card home12" id="welcome-section">
+                        <h1>Hello, I am Ahmed Sayed</h1>
+                    </section>
+        
+                    <!--=============== ABOUT ME ===============-->
+        
+                    <section class="content-card about" id="about">
+                        <h1>About me</h1>
+                        <div class="about-item about-me">
+                            <p>
+                                Innovative, motivated, and hard-working software engineering with 1+ years of experience. Driven by
+                                passion and innovation, designing. Highly skilled and growing knowledge in Web Front-End, Python
+                                coding apps and GUI
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <div class="about-item skills">
+                                <h1>Skills</h1>
+                                <span class="skill">HTML</span>
+                                <span class="skill">CSS</span>
+                                <span class="skill">JavaScript</span>
+                                <span class="skill">IT</span>
+                                <span class="skill">Excel</span>
+                                <span class="skill">Access</span>
+                                <span class="skill">Python</span>
+                                <span class="skill">GUI</span>
+                                <span class="skill">Desgin</span>
+                            </div>
+        
+                            <div class="about-item languages">
+                                <h1>Languages</h1>
+                                <div class="language">
+                                    <p>Arabic</p>
+                                    <span class="bar"><span class="polish"></span></span>
+                                </div>
+                                <div class="language">
+                                    <p>English</p>
+                                    <span class="bar"><span class="english"></span></span>
+                                </div>
+                                <div class="language">
+                                    <p>Spanish</p>
+                                    <span class="bar"><span class="french"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!--=============== EXPERIENCE ===============-->
+        
+                    <section class="content-card experience" id="experience">
+                        <h1>Experience</h1>
+                        <div class="timeline">
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">February 2021 – Present</div>
+                                    <div class="timeline-content">
+                                        <h3>Merchandise Developer & Help Desk</h3>
+                                        <p>
+                                            ACTIV ABOU ALAA
+                                        </p>
+                                        <p>
+                                            - Review & check the new merchandise and collecting data about it like (supplier -
+                                            description - cost price - quantity) to activate & coding it into the system
+                                            - Adjustment prices of the merchandise on the program (discount / sale)
+                                            - Main member in stocktaking committee
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">February 2018 – June 2020</div>
+                                    <div class="timeline-content">
+                                        <h3>System Administration</h3>
+                                        <p>
+                                            JEL ACTIV     
+                                        </p>
+                                        <p>
+                                            - Installing and configuring software, hardware and networks
+                                            - Monitoring system performance and troubleshooting issues
+                                            - Ensuring security and efficiency of IT infrastructure
+                                            - Install and configure software and hardware
+                                            - Set up accounts and workstations
+                                            - Monitor performance and maintain systems according to requirements
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">August 2016 – January 2018</div>
+                                    <div class="timeline-content">
+                                        <h3>Salesman</h3>
+                                        <p>
+                                            JEL ACTIV
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>    
+
+            
+    </section>
+
+
+
+
+
+
+
+    <section  class="pages-p" id="Services">
+
+        <div class="box-titles">
+            <h2 class="tittle1">Services</h2>
+            <div class="button2info"><a href="#Services2" onclick="if(document.getElementById('Services2') .style.display=='none') {document.getElementById('Services2') .style.display=''}else{document.getElementById('Services2') .style.display='none'}">+</a></div>
+        </div>
+
+    </section>
+    <section class="cardss" id="Services2" style="display: none;">
+        <div class="button2home" id="b2h2"><a href="#Services"><i class="fa-solid fa-chevron-up"></i></a></div>
+        <script>
+            $("#b2h2").click(function () {
+                 $("#Services2").fadeOut('slow');
+            });
+            </script>
+        <h2 class="tittle2">Services</h2>
+        <div class="contentt">
+            <div class="container">
+                <div class="cards">
+
+                    <div class="card jop">
+                        <h2 class="card-title-large">IT Help Desk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT Help Desk</h2> 
+                        <h3 class="card-title-small">IT Help Desk</h3> 
+                        <h3 class="card-cta"><i class="fa-solid fa-gears"></i></h3>
+                        <p class="card-description">Conduct troubleshooting to resolve IT-related & application issues for users. Install & configration & upgrade 
+                            hardware and software execute various administrative duties as required</p> 
+                    </div>
+        
+                    <div class="card jop">
+                        <h2 class="card-title-large">DBMS Programer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DBMS Programer</h2> 
+                        <h3 class="card-title-small">DBMS Programer</h3> 
+                        <h3 class="card-cta"><i class="fa-solid fa-database"></i></h3>
+                        <p class="card-description">Database Managment System Programer" design & build software solution based on your technical specification by EXCEL & ACCESS</p> 
+                    </div>
+        
+                    <div class="card jop">
+                        <h2 class="card-title-large">Front-End Web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front-End Web</h2> 
+                        <h3 class="card-title-small">Front-End Web Developer</h3> 
+                        <h3 class="card-cta"><i class="fa-solid fa-code"></i></h3>
+                        <p class="card-description">                        
+                            <ul>
+                                <li>Writing website code with programming languages such as HTML, C++ and Java</li>
+                                <li>Producing, maintaining and modifying websites and user interfaces</li>
+                                <li>Ensuring websites are accessible across many platforms, including laptops and smartphones</li>
+                                <li>Working with clients to develop the overall look and design of a website</li>
+                            </ul>
+
+                    </div>
+        
+                    <div class="card jop">
+                        <h2 class="card-title-large">Python Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python Developer</h2> 
+                        <h3 class="card-title-small">Python Developer</h3> 
+                        <h3 class="card-cta"><i class="fa-brands fa-python"></i></h3>
+                        <p class="card-description">                        
+                            <ul>
+                                <li>Writing effective and scalable Python codes</li>
+                                <li>Designing and implementing robust applications</li>
+                                <li>Has the knowledge to design and implement code using the Flask - Django framework</li>
+                                <li>Building SQL databases by python </li>
+                            </ul>
+                            
+                    </div>  
+                    
+                    <div class="card jop">
+                        <h2 class="card-title-large">SQL Commands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL Commands</h2> 
+                        <h3 class="card-title-small">SQL Commands</h3> 
+                        <h3 class="card-cta"><i class="fa-solid fa-database"></i></h3>
+                        <p class="card-description">                        
+                            <ul>
+                                <li>Data Definition Language (DDL) (CREATE-ALTER-DROP-TRUNCATE)</li>
+                                <li>Data Manipulation Language(DML) (INSERT-UPDATE-DELETE)</li>
+                                <li>Transaction Control Language (TCL) (COMMIT-ROLLBACK-SAVEPOINT)</li>
+                                <li>Data Query Language (DQL) (SELECT)</li>
+                            </ul>
+                            
+                    </div> 
+        
+                </div>
+            </div>
+        </div>    
+    </section>
+
+
+
+
+
+
+
+    <section class="pages-p" id="Portfolio">
+
+        <div class="box-titles">
+            <h2 class="tittle1">Portfolio</h2>
+            <div class="button2info"><a href="#Portfolio2" onclick="if(document.getElementById('Portfolio2') .style.display=='none') {document.getElementById('Portfolio2') .style.display=''}else{document.getElementById('Portfolio2') .style.display='none'}">+</a></div>
+        </div>
+    
+    </section>
+    <section class="portfolio" id="Portfolio2" style="display: none;">
+        <div class="button2home" id="b2h3"><a href="#Portfolio"><i class="fa-solid fa-chevron-up"></i></a></div>
+        <script>
+            $("#b2h3").click(function () {
+                 $("#Portfolio2").fadeOut('slow');
+            });
+            </script>
+        <h2 class="tittle2">Portfolio</h2>
+        <div class="content">
+
+
+
+            <div class="p-card">
+                <div class="p-img"><a href="https://github.com/Ahmedsayedmohamed?tab=repositories" target="_blank"><img src="./portfolio/Github.png"></a></div>
+                <div class="p-info">
+                    <p class="p-category">For source code of projects ...</p>
+                    <strong class="p-tittle"><span>GitHub Account</span><a href="https://github.com/Ahmedsayedmohamed" target="_blank" class="more-details"><i class="fa-solid fa-link"></i></a> </strong>
+                </div>
+            </div>
+            
+            
+            <div class="p-card">
+                <div class="p-img"><a href="./portfolio/Stores Locator/Activ stores.html" target="_blank"><img src="./portfolio/Stores Locator/store_locator.png"></a></div>
+                <div class="p-info">
+                    <p class="p-category">Web design</p>
+                    <strong class="p-tittle"><span>Store Locator</span><a href="./portfolio/Stores Locator/Activ stores.html" target="_blank" class="more-details"><i class="fa-solid fa-eye"></i></a> </strong>
+                    <p class="p-source"><a href="https://github.com/Ahmedsayedmohamed/Stores-Locator" target="_blank">Source Code</a></p>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="p-img"><a href="./portfolio/Z-TEX/index.html" target="_blank"><img src="./portfolio/Z-TEX/z-tex.png"></a></div>
+                <div class="p-info">
+                    <p class="p-category">Web design</p>
+                    <strong class="p-tittle"><span>Zid Tex</span><a href="./portfolio/Z-TEX/index.html" target="_blank" class="more-details"><i class="fa-solid fa-eye"></i></a> </strong>
+                    <p class="p-source"><a  href="#" target="_blank">Source Code</a></p>
+                </div>
+            </div>
+
+
+
+
+            
+        </div>
+
+    </section>
+
+
+    <script src="IndexSc.js"></script>
+
+
+
+
+    <footer class="footer">
+        <ul class="footer-icons">
+            <li><a href="https://instagram.com/ahmed.sayed_165" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ahmed-sayed-945829151" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="http://wa.me/201145809984" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="mailto: asayed565565@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://github.com/Ahmedsayedmohamed?tab=repositories" target="_blank" class="fab fa-github"></a></li>
+        </ul>
+        <p class="f-name">&#169; <span>Ahmed Sayed</span></p>
+        <ul class="footer-list">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#My-Story">About me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+        </ul>
+        <div class="curve"></div>
+    </footer>
+
+
+</body>
+
+</html>

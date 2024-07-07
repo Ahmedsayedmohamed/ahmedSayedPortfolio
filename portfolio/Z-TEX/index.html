@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+    <!-- Meta tags -->
+    <title>ZID TEX</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta name="description" content=""/>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="navbar">
+
+          <div class="logo"><a href="#home"><img src="z.png" alt=""></a></div>
+          <ul class="pages_links">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+          </ul>
+          <div class="button2info" id="bn2i"><a href="#contact2" class="action_btn" onclick="if(document.getElementById('contact2') .style.display=='none') {document.getElementById('contact2') .style.display=''}else{}">Contact Us</a></div>
+
+          <div class="lines_btn">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+
+      </div>
+
+      <div class="dropdown_menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact2" class="action_btn" onclick="if(document.getElementById('contact2') .style.display=='none') {document.getElementById('contact2') .style.display=''}else{}">Contact Us</a></li>
+      </div>
+
+    </header>
+
+
+    <!-- script for dropdown menu-->
+
+    <script>
+
+      const toggleBtn = document.querySelector(".lines_btn")
+      const toggleBtnIcon = document.querySelector(".lines_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
+
+      toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle("open")
+          const isOpen = dropDownMenu.classList.contains("open")
+
+          toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+            
+      }
+
+    </script>
+
+
+
+
+    <section id="contact2" style="display:none;" class="conta" >
+      <div class="button2home" id="b2h1"><a href="#home" onclick="show_hide()"><i class="fa-solid fa-chevron-up"></i></a></div>
+      <script>
+        var a
+        function show_hide()
+        {
+          if(a==1)
+            {
+              document.getElementById("contact2").style.display="inline";
+              return a=0
+            }
+          else
+            {
+              document.getElementById("contact2").style.display="none";
+              return
+            }
+
+        }
+      </script> 
+      <div class="overlay" id="divOne">
+        <div class="wrapperr">
+          <h2>Get in Touch</h2><a href="#home" class="close" onclick="show_hide()">&times;</a>
+          <script>
+            var a
+            function show_hide()
+            {
+              if(a==1)
+                {
+                  document.getElementById("contact2").style.display="inline";
+                  return a=0
+                }
+              else
+                {
+                  document.getElementById("contact2").style.display="none";
+                  return
+                }
+    
+            }
+          </script>
+          <div class="contenttt">
+            <div class="containerrr">
+              <form class="form_cont"> 
+                <label class="labels">Full Name</label>
+                <input placeholder="" type="text">
+                <label>E-mail </label>
+                <input placeholder="" type="text">
+                <label>Type Your Message....</label> 
+                <textarea iplaceholder=""></textarea>
+                <input type="submit" value="Submit">
+
+
+                <div class="content-form">
+                  <section>
+                      <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                      <p>44 Al-Gomhoria Street - Post Building - P.O. Box 27 - Port Said </p>
+                  </section>
+  
+                  <section>
+                    <i class="fa-solid fa-tty"></i>
+                      <p>02 44814612</p>
+                  </section>
+
+                  <section>
+                    <i class="fa-solid fa-fax"></i>
+                    <p>02 44814210</p>
+                  </section>
+
+                  <section>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>20 1028230609</p>
+                  </section>
+
+  
+                  <section>
+                      <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                      <p><a href="mailto: [Logistics@zid-tex.com]?subject= &body= ">Email Us </a></p>
+                  </section>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="home" class="home swiper mySwiper">
+
+      <div class="wrapper swiper-wrapper">
+
+        <div class="slide swiper-slide">
+          <img src="images/0.jpeg" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/1.jpeg" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/2.jpg" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/3.JPeG" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/4.JPG" alt="" class="image" />
+        </div>
+        
+        <div class="slide swiper-slide">
+          <img src="images/5.JPG" alt="" class="image" />
+        </div>
+        
+        <div class="slide swiper-slide">
+          <img src="images/6.jpeg" alt="" class="image" />
+        </div>
+        
+        <div class="slide swiper-slide">
+          <img src="images/7.jpeg" alt="" class="image" />
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+
+    <section class="about" id="about">
+
+      <div class="ab_box">
+        <div class="card">
+          <img src="./1-1.JPG" alt="">
+          <div class="text_box">
+            <p >
+              <h1 class="ab_title"><b> ABOUT US </b> </h1>
+              <span class="ab_text">
+                Welcome to our Egyptian clothing factory! We take great pride in manufacturing a wide range of high-quality garments and accessories for men, women, and children. 
+                <br>From stylish outfits for outings to comfortable loungewear and trendy innerwear, we offer an extensive collection that caters to diverse tastes and preferences.
+                <br>At our factory, we prioritize craftsmanship and attention to detail, ensuring that every piece we create meets the highest standards of excellence. Our skilled team of designers, tailors, and artisans work collaboratively to bring forth unique and fashionable clothing items that reflect the essence of Egyptian style and elegance.
+                <br>
+                <br>In our extensive product line, you will find a plethora of options, including sophisticated dresses, chic tops, trendy bottoms, and fashionable outerwear for women. For men, we offer a variety of stylish shirts, trousers, suits, and jackets that blend modern trends with classic designs.
+                <br>Additionally, we cater to the little ones with adorable and comfortable outfits that keep them looking cute and feeling great.Not limited to clothing, we also produce a range of accessories to complement your attire. 
+                <br>
+                <br>Our collection includes shoes in various styles and designs to add the perfect finishing touch to any outfit. We also offer a diverse selection of bags, ranging from handbags to backpacks, to meet your daily needs with style and functionality.
+                <br>As an Egyptian clothing manufacturer, we prioritize using high-quality materials sourced locally whenever possible. This allows us to support our local communities and promote sustainability through reduced carbon footprint. 
+                <br>Our commitment to ethical production practices ensures that our garments are not only fashionable but also produced in an environmentally conscious manner.
+                <br>We take immense pleasure in serving our customers with superior products that exceed their expectations. 
+                <br>
+                <br>Our mission is to provide clothing and accessories that inspire confidence, express personal style, and make a lasting impression. We look forward to being your trusted partner in fashion, and we invite you to explore our collection and experience the essence of Egyptian craftsmanship and style.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <section class="brands"></section>
+
+
+    <footer>
+      <div class="row">
+        <div class="col"><a class="logo2" href="#home">ZID TEX</a></div>
+
+        <div class="col">
+          <h3>Office <div class="underline"><span></span></div></h3>
+          <p>44 Al-Gomhoria Street</p>
+          <p>Post Building - P.O. Box 27</p>
+          <p>Port Said</p>
+          <p class="email-id"><a href="mailto: [Logistics@zid-tex.com]?subject= &body= ">Email Us! </a></p>
+          <h4>+02 44814612</h4>
+        </div>
+
+        <div class="col">
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Newsletter <div class="underline"><span></span></div></h3>
+          <form class="footer_form" action="">
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter Your E-mail" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social_icons">
+            <a href="https://wa.me/01028230609" target="-blank"><i class="fab fa-whatsapp"></i></a>
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright © 2023 Z-TEX Fac. All rights reserved.</p>
+    </footer>
+
+  </body>
+
+</html>
